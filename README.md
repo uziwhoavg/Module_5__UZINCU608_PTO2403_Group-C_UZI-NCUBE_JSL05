@@ -1,16 +1,24 @@
-# [JSL05] Submission: 
+# [JSL05] Submission: Guardians' Playlist Generator
 
 You will:
-1. Use the provided Starter Code Repository.
+1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
 2. Code your solution.
 3. Commit changes to your GitHub repository.
 4. Submit the GitHub Repository Link to the LMS [JSL05] Submission Project Tab.
 
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/p9bvd5QH3
+Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pXXzN5GT6
 
-**Challenge Scenario:** In this coding exercise, you will work with the Monster Ternary Operator. You'll use ternary operators to make decisions based on various scenarios involving Monster Energy drinks.
+### Guardians' Playlist Generator
 
-In each of these challenges, the ternary operator is used to decide between two options based on a condition, demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, they should be used judiciously to maintain readability, especially for more complex conditions.
+In this challenge, you'll combine your knowledge of JavaScript arrays and the `map()` function to create a personalized "Awesome Mix" playlist for each of the Guardians of the Galaxy. Your task is to filter and organize songs based on each Guardian's musical preference, displaying a playlist tailored just for them.
+
+#### Instructions:
+
+1. **Expand the Songs Array**: Add at least five songs to the `songs` array, each with `title`, `artist`, and `genre`.
+2. **Assign Preferences**: Complete the `guardians` object by assigning each Guardian their preferred music genre.
+3. **Generate Playlists**: Implement the `generatePlaylist` function. Use the `map()` function to create a personalized playlist for each Guardian based on their genre preference.
+4. **Display Playlists**: Dynamically create and append elements to the `#playlists` div to display each Guardian's playlist. Include the Guardian's name and their list of songs.
+5. **Test Your Application**: Ensure that your application correctly filters songs by genre for each Guardian and displays the playlists on the web page.
 
 ## What You Need to Do:
 
@@ -30,10 +38,9 @@ In each of these challenges, the ternary operator is used to decide between two 
 
 1. We will review your GitHub repository to ensure that it contains the updated code files.
 2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. Successful completion of the project will involve implementing the ternary logic as per the provided instructions.
-4. We will consider the commit history and meaningful commit messages to evaluate your coding process.
+3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
 
-Please follow the provided steps and guidelines to complete the Monster Ternary Operator challenge effectively. Your ability to use ternary operators for conditional logic is a valuable skill, and we look forward to reviewing your work.
+This challenge will test your ability to manipulate arrays and objects, use the `map()` function for data transformation, and dynamically update the DOM based on data. Good luck, and may your mix be truly awesome!
 
 
 
