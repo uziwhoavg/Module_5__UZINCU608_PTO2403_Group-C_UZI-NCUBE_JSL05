@@ -12,6 +12,8 @@ Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/
 
 In this challenge, you'll combine your knowledge of JavaScript arrays and the `map()` function to create a personalized "Awesome Mix" playlist for each of the Guardians of the Galaxy. Your task is to filter and organize songs based on each Guardian's musical preference, displaying a playlist tailored just for them.
 
+![alt text](JSL05_solution.png)
+
 #### Instructions:
 
 1. **Expand the Songs Array**: Add at least five songs to the `songs` array, each with `title`, `artist`, and `genre`.
