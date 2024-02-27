@@ -1,4 +1,4 @@
-# [JSL05] Submission: Guardians' Playlist Generator
+# [JSL05] Submission: Galaxy Playlist Generator
 
 You will:
 1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
