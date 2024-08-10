@@ -11,22 +11,52 @@ const songs = [
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
-    // Feel free to add even more songs
+    { title: "Pata Pata", artist: "Miriam Makeba", genre: "Pop" },
+    { title: "Happiness", artist: "Mafikizolo", genre: "Pop" },
+    { title: "Intliziyo", artist: "Langa Mavuso", genre: "R&B" },
+    { title: "Ngiyesaba", artist: "Simmy", genre: "R&B" },
+    { title: "Waves", artist: "uzi&TRIZZLE.", genre: "Pop" },
+    { title: "Said", artist: "uzi&TRIZZLE. ft. Noku.", genre: "R&B" },
+
 ];
 
 
 // Object containing each Guardian's preferred genre
+// Add preferences for Drax, Rocket, and Groot
 const guardians = {
     "Star-Lord": "Rock",
     "Gamora": "Pop",
-    // Add preferences for Drax, Rocket, and Groot
+    "Drax": "R&B",
+    "Rocket": "Rock",
+    "Groot": "Pop"
+
+    
 };
 
 // Function to generate playlist based on preferred genre
 function generatePlaylist(guardians, songs) {
     // Use the map() function to create playlists for each Guardian
     // Your code here
+    const playlists = Object.entries(guardians).map(([guardian, genre]) => {
+        const playlistSongs = songs.filter(song => song.genre === genre);
+        const playlistElement = document.createElement("div");
+        playlistElement.classList.add("playlist");
+        playlistElement.innerHTML = `<h2>${guardian}'s Playlist</h2>`;
+        playlistSongs.forEach(song => {
+            const songElement = document.createElement("div");
+            songElement.classList.add("song");
+            songElement.innerHTML = `<span class="song-title">${song.title}</span> by ${song.artist}`;
+            playlistElement.appendChild(songElement);
+        });
+        return playlistElement;
+    });
+
+const playlistsContainer = document.getElementById("playlists");
+playlists.forEach(playlist => playlistsContainer.appendChild(playlist));
+
 }
+
+
 
 // Call generatePlaylist and display the playlists for each Guardian
 generatePlaylist(guardians, songs);
